@@ -2,53 +2,43 @@ import Image from "next/image";
 
 const ReferralIncomeSection = () => {
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between px-40 py-16">
+    <section className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 md:px-12 lg:px-40 py-16 gap-8">
       {/* Left Side: Earnings Card */}
+      <div className="lg:w-1/2 flex justify-center">
         <Image
-                src="/images/referral.png"
-                alt="Workout Preview"
-                width={470}
-                height={600}
-                className="drop-shadow-xl"
-              />
+          src="/images/referral.png"
+          alt="Workout Preview"
+          width={470}
+          height={600}
+          className="drop-shadow-xl max-w-full"
+        />
+      </div>
+
       {/* Right Side: Text Content */}
-      <div className="lg:w-2/3 mt-8 lg:mt-0 lg:pl-12 max-w-[605px]">
-      {/* <Image
-                src="/dollarbag.svg"
-                alt="dollarbag"
-                width={16}
-                height={16}
-                className="drop-shadow-xl"
-              /> */}
-        <h2 className="text-[#1F222A] text-[48px] font-bold leading-normal">Turn Referrals into Passive Income</h2>
-        <p className="text-[#4E525A] text-[21px] font-normal leading-normal">
+      <div className="lg:w-2/3 mt-8 lg:mt-0 lg:pl-12 max-w-[605px] text-center lg:text-left">
+        <h2 className="text-[#1F222A] text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-normal">
+          Turn Referrals into Passive Income
+        </h2>
+        <p className="text-[#4E525A] text-[16px] md:text-[18px] lg:text-[21px] font-normal leading-normal">
           Transform your fitness journey into an income opportunity with exclusive referral perks & commissions.
           Unlike other referral programs, you’ll receive monthly commissions based on ambassador tiers.
         </p>
-        <ul className="mt-6 space-y-3 text-[#4E525A] text-[18px] font-normal leading-normal">
-          <li className="flex items-center">
-            <span className="text-lime-500 mr-2">
-              {/* 💰 */}
-               <Image src="/whitetick.svg" alt="Icon" width={20} height={20} />
-              </span> Share & Earn – Invite friends via your unique link.
+        <ul className="mt-6 space-y-3 text-[#4E525A] text-[16px] md:text-[18px] font-normal leading-normal">
+          <li className="flex items-center justify-center lg:justify-start">
+            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            Share & Earn – Invite friends via your unique link.
           </li>
-          <li className="flex items-center">
-            <span className="text-lime-500 mr-2">
-              {/* 💵 */}
-               <Image src="/whitetick.svg" alt="Icon" width={20} height={20} />
-              </span> Get Paid – Earn commissions when they subscribe.
+          <li className="flex items-center justify-center lg:justify-start">
+            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            Get Paid – Earn commissions when they subscribe.
           </li>
-          <li className="flex items-center">
-            <span className="text-lime-500 mr-2">
-              {/* 🔓 */}
-               <Image src="/whitetick.svg" alt="Icon" width={20} height={20} />
-              </span> Unlock Higher Rewards – Progress through tiers & boost earnings.
+          <li className="flex items-center justify-center lg:justify-start">
+            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            Unlock Higher Rewards – Progress through tiers & boost earnings.
           </li>
-          <li className="flex items-center">
-            <span className="text-lime-500 mr-2">
-              {/* 🏆 */}
-               <Image src="/whitetick.svg" alt="Icon" width={20} height={20} />
-              </span> Compete & Win – Join leaderboard challenges & bonuses.
+          <li className="flex items-center justify-center lg:justify-start">
+            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            Compete & Win – Join leaderboard challenges & bonuses.
           </li>
         </ul>
       </div>

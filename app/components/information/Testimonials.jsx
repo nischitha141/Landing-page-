@@ -38,7 +38,7 @@ export default function Testimonials() {
             Hear first-hand from our incredible community of customers.
           </p>
         </div>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6 h-[500px]">
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6 ">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-100 p-8 rounded-lg shadow-md">
               <p className="text-[#35383F] text-[15px] font-semibold leading-[26px]">“{testimonial.quote}”</p>
