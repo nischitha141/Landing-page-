@@ -21,7 +21,7 @@ export default function PricingPlans() {
     const [selectedPlan, setSelectedPlan] = useState("weekly");
 
     return (
-        <div className="flex flex-col items-center py-10 bg-white ">
+        <div className="flex flex-col items-center py-10 bg-white  ">
             <h2 className="text-[#1F222A] text-center text-[48px] font-bold mb-4 max-w-[750px]">Choose the Perfect Plan for Your Fitness Journey</h2>
             <p className="text-[#4E525A] text-center text-[20px] font-medium leading-[30px] mb-6 max-w-[750px] ">Flexible Membership Options to Suit Your Goals and Lifestyle. Enjoy a 3 or 7-day free trial and find the right fit to start transforming your life today!</p>
 
