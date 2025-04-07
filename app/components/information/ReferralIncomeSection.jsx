@@ -17,27 +17,31 @@ const ReferralIncomeSection = () => {
       {/* Right Side: Text Content */}
       <div className="lg:w-2/3 mt-8 lg:mt-0 lg:pl-12 max-w-[605px] text-center lg:text-left">
         <h2 className="text-[#1F222A] text-[32px] md:text-[40px] lg:text-[48px] font-bold leading-normal">
-          Turn Referrals into Passive Income
+          <span className="inline-block align-text-bottom mr-2 lg:mb-2">
+            <Image src="/icons/money_bag.svg" width={40} height={40} alt="money bag" />
+          </span>
+          Turn Referrals into <br className="hidden md:block" /> Passive Income
         </h2>
+
         <p className="text-[#4E525A] text-[16px] md:text-[18px] lg:text-[21px] font-normal leading-normal">
           Transform your fitness journey into an income opportunity with exclusive referral perks & commissions.
           Unlike other referral programs, you’ll receive monthly commissions based on ambassador tiers.
         </p>
         <ul className="mt-6 space-y-3 text-[#4E525A] text-[16px] md:text-[18px] font-normal leading-normal">
           <li className="flex items-center justify-center lg:justify-start">
-            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            <Image src="/icons/fire.svg" alt="Icon" width={20} height={20} className="mr-2" />
             Share & Earn – Invite friends via your unique link.
           </li>
           <li className="flex items-center justify-center lg:justify-start">
-            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            <Image src="/icons/credit_card.svg" alt="Icon" width={20} height={20} className="mr-2" />
             Get Paid – Earn commissions when they subscribe.
           </li>
           <li className="flex items-center justify-center lg:justify-start">
-            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            <Image src="/icons/rocket.svg" alt="Icon" width={20} height={20} className="mr-2" />
             Unlock Higher Rewards – Progress through tiers & boost earnings.
           </li>
           <li className="flex items-center justify-center lg:justify-start">
-            <Image src="/whitetick.svg" alt="Icon" width={20} height={20} className="mr-2" />
+            <Image src="/icons/bullseye.svg" alt="Icon" width={20} height={20} className="mr-2" />
             Compete & Win – Join leaderboard challenges & bonuses.
           </li>
         </ul>
