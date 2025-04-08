@@ -45,7 +45,7 @@ export default function FormPerfectAI() {
         {/* Right Features */}
         <div className="flex flex-col gap-8 w-full max-w-[400px] md:max-w-none text-center md:text-left md:items-center">
           <Feature
-            icon="/icons/Custom Workouts.svg"
+            icon="/icons/Custom_Workouts.svg"
             title="Custom Workouts"
             description="Adjust duration, intensity, and focus areas with ease"
           />
@@ -55,7 +55,7 @@ export default function FormPerfectAI() {
             description="AI-suggested meal & mindfulness plans including reading for overall well-being"
           />
           <Feature
-            icon="/icons/Earn Passive.svg"
+            icon="/icons/Earn_Passive.svg"
             title="Earn Passive Income"
             description="Invite friends & turn your fitness journey into passive income!"
           />
