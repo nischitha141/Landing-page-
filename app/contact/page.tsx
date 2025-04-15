@@ -83,10 +83,11 @@ export default function ContactPage() {
                 });
                 setErrors({});
             } else {
-                alert('Something went wrong!');
+                // alert('Something went wrong!');
             }
         } catch (err) {
-            alert('Error sending message');
+            // alert('Error sending message');
+            console.log("Error sending message",err)
         } finally {
             setSubmitting(false);
         }
