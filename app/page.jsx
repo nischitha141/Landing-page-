@@ -10,6 +10,7 @@ import EnterpriseSection from "./components/information/EnterpriseSection"
 import Testimonials from "./components/information/Testimonials"
 import PricingPlans from "./components/information/PricingPlans";
 import HeroSection from "./components/information/footer";
+import BannerSection from "./components/information/bannersection";
 export default function HomePage() {
   return (
     <main>
@@ -26,7 +27,11 @@ export default function HomePage() {
       <section id="enterprise"><EnterpriseSection /></section>
       <section id="testimonials"><Testimonials /></section>
       <section id="pricing"><PricingPlans /></section>
+      
+      <BannerSection />
       <section id="HeroSection"><HeroSection /></section>
+      
+    
 
     </main>
   );
