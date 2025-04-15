@@ -22,7 +22,7 @@ export default function PricingPlans() {
 
     return (
         <div className="flex flex-col items-center bg-white pt-10 md:pt-16 pb-16 px-6 md:px-0">
-            <h2 className="text-[#1F222A] text-center text-[28px] md:text-[48px] font-bold mb-4 max-w-[750px]">
+            <h2 className="text-[#1F222A] text-center text-[28px] md:text-[48px] font-bold mb-4  max-w-[750px]">
                 Choose the Perfect Plan for Your Fitness Journey
             </h2>
             <p className="text-[#4E525A] text-center text-[16px] md:text-[20px] font-medium leading-[24px] md:leading-[30px] mb-6 max-w-[750px]">
