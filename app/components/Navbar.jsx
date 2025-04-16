@@ -3,18 +3,16 @@ import { useState } from "react";
 import Image from "next/image";
 import { FiMenu, FiX } from "react-icons/fi";
 import Link from "next/link";
-
+import { useRouter } from 'next/navigation'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const router = useRouter()
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setIsOpen(false); // Close menu after clicking
-    }
+    router.push(`/?section=${sectionId}`)
+    setIsOpen(false); // Close menu after clicking
+
   };
 
   return (

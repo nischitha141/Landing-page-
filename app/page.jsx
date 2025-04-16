@@ -11,9 +11,11 @@ import Testimonials from "./components/information/Testimonials"
 import PricingPlans from "./components/information/PricingPlans";
 import HeroSection from "./components/information/footer";
 import BannerSection from "./components/information/bannersection";
+import ScrollToSection from './utils/ScrollToSection'
 export default function HomePage() {
   return (
     <main>
+      <ScrollToSection />
       <div id="home" className="bg-[url('/bgpattern.svg')] bg-center w-full bg-white min-h-screen">
         <Navbar />
         <HomeSection />
