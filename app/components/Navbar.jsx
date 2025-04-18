@@ -57,9 +57,12 @@ export default function Navbar() {
           <button onClick={() => scrollToSection("referral")} className="cursor-pointer text-[18px] font-semibold text-[#35383F] hover:text-[#D0EA59]">Referral</button>
           <button onClick={() => scrollToSection("enterprise")} className="cursor-pointer text-[18px] font-semibold text-[#35383F] hover:text-[#D0EA59]">For Enterprise</button>
           <button onClick={() => scrollToSection("pricing")} className="cursor-pointer text-[18px] font-semibold text-[#35383F] hover:text-[#D0EA59]">Pricing</button>
+          <Link href="/contact" className=" w-full flex flex-col items-center ">
           <button className="cursor-pointer p-3 w-[80%] text-center border border-[#D5D7DA] font-urbanist font-extrabold text-[18px] leading-[100%] tracking-[-0.4%] text-[#35383F] rounded-md">
             Contact Us
           </button>
+          
+          </Link>
           <button className="cursor-pointer p-3 w-[80%] text-center border border-[#D5D7DA] font-urbanist font-extrabold text-[18px] leading-[100%] tracking-[-0.4%] text-[#35383F] bg-[#D0EA59] rounded-md">
             Download App
           </button>
