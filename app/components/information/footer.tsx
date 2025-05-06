@@ -1,9 +1,18 @@
 "use client";
+import { useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
-
+import { useRouter } from 'next/navigation'
 export default function HeroSection() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const router = useRouter()
+  const scrollToSection = (sectionId: any) => {
+    router.push(`/?section=${sectionId}`)
+    setIsOpen(false); // Close menu after clicking
+
+  };
   return (
     <div className="relative pt-20">
 
@@ -21,11 +30,11 @@ export default function HeroSection() {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap justify-center text-[16px] md:text-[18px] font-semibold gap-6">
-            <Link href="#" className="hover:text-black">Features</Link>
-            <Link href="#" className="hover:text-black">Referral</Link>
-            <Link href="#" className="hover:text-black">For Enterprise</Link>
-            <Link href="#" className="hover:text-black">Pricing</Link>
+          <div className="flex flex-wrap justify-center text-[16px] md:text-[18px] font-semibold gap-6 cursor-pointer">
+            <a onClick={() => scrollToSection("features")} className="hover:text-black">Features</a>
+            <a onClick={() => scrollToSection("referral")} className="hover:text-black">Referral</a>
+            <a onClick={() => scrollToSection("enterprise")} className="hover:text-black">For Enterprise</a>
+            <a onClick={() => scrollToSection("pricing")} className="hover:text-black">Pricing</a>
           </div>
 
           {/* Social Media Icons */}
