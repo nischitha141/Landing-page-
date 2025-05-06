@@ -48,9 +48,8 @@ export default function HeroSection() {
         {/* Legal Links & Copyright */}
         <div className="flex flex-col md:flex-row justify-between text-[#1F222A] text-xs space-y-4 md:space-y-0">
           <div className="flex flex-wrap justify-center gap-6">
-            <Link href="https://quark-spring-468.notion.site/Privacy-Policy-for-FormPerfect-AI-1d515de41a8b8076b312fb5fba92c2bc" target="_blank"
-              rel="noopener noreferrer" className="hover:text-black">Privacy Policy</Link>
-            <Link href="https://www.notion.so/Terms-of-Service-1d815de41a8b808e8a9deb03d6d4fdee" target="_blank"
+            <Link href="/privacy-policy" target="_blank" className="hover:text-black">Privacy Policy</Link>
+            <Link href="/Terms-and-Condition" target="_blank"
               rel="noopener noreferrer" className="hover:text-black">Terms of Use</Link>
             <Link href="#" className="hover:text-black">Sales and Refunds</Link>
             <Link href="#" className="hover:text-black">Legal</Link>
