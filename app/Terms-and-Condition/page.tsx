@@ -120,7 +120,8 @@ export default function PrivacyPolicyPage() {
                 1. License Grant
                 </h2>
                 <p className="text-[18px] font-normal leading-[100%] mb-1 text-[18px] font-normal leading-[100%] tracking-[0.5px] leading-normal">
-                FormPerfect AI ("we", "us", or "our") grants you (“you” or “user”) a personal, non-exclusive, non-transferable, limited license to install and use the FormPerfect AI mobile application (the “App”) for lawful, non-commercial purposes, in accordance with this EULA and the Apple App Store Terms of Service.
+                FormPerfect AI (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) grants you (&quot;you&quot; or &quot;user&quot;) a personal, non-exclusive, non-transferable, limited license to install and use the FormPerfect AI mobile application (the &quot;App&quot;) for lawful, non-commercial purposes, in accordance with this EULA and the Apple App Store Terms of Service.
+
                 </p>
 
   
@@ -189,7 +190,7 @@ export default function PrivacyPolicyPage() {
                 6. Disclaimer
                 </h2>
                 <p className="text-[18px] font-normal leading-[100%] mb-1 text-[18px] font-normal leading-[100%] tracking-[0.5px] leading-normal">
-                The App is provided "as is." We do not guarantee fitness results, physical safety, or continuous availability. Always consult a healthcare professional before starting a new workout program.
+                The App is provided &quot;as is.&quot; We do not guarantee fitness results, physical safety, or continuous availability. Always consult a healthcare professional before starting a new workout program.
                 </p>
                 <h2 className="text-[20px] font-bold leading-[38px] tracking-[-0.008em] mb-4 mt-2" >
                 7. Limitation of Liability

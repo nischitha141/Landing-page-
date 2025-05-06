@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar'; // Import your Navbar component
 import Footer from '../components/information/footer'; // Import your Footer component
+import Image from 'next/image';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -87,7 +88,7 @@ export default function ContactPage() {
             }
         } catch (err) {
             // alert('Error sending message');
-            console.log("Error sending message",err)
+            console.log("Error sending message", err)
         } finally {
             setSubmitting(false);
         }
@@ -178,7 +179,7 @@ export default function ContactPage() {
                                     value={formData.lastName}
                                     onChange={handleChange}
                                     className="w-full border border-[#E0E0E1] p-3 rounded-md font-semibold text-[16px] leading-none tracking-[-0.3%] text-[#717680]"
-                            
+
                                 />
                                 {errors.lastName && <p className="text-red-500 text-sm">{errors.lastName}</p>}
                             </div>
@@ -242,9 +243,11 @@ export default function ContactPage() {
 
                     {/* Image side */}
                     <div className="flex-1">
-                        <img
+                        <Image
                             src="/contact-side-image.png"
                             alt="Contact Us"
+                            width={800} // specify actual width
+                            height={600} // specify actual height
                             className="rounded-lg w-full h-auto object-cover"
                         />
                     </div>

@@ -1,16 +1,16 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
 export default function HeroSection() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => setIsOpen(!isOpen);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const toggleMenu = () => setIsOpen(!isOpen);
   const router = useRouter()
-  const scrollToSection = (sectionId: any) => {
+  const scrollToSection = (sectionId: string) => {
     router.push(`/?section=${sectionId}`)
-    setIsOpen(false); // Close menu after clicking
+    // setIsOpen(false); 
 
   };
   return (
