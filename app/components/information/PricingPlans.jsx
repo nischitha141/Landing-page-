@@ -2,19 +2,101 @@
 
 import { useState } from "react";
 
+// const pricingOptions = {
+//     weekly: [
+//         { title: "Standard Plan", price: 4.99, features: ["Core AI-driven fitness tracking", "Basic workout routines", "Daily calorie tracking", "Limited progress analytics", "Community access"] },
+//         { title: "Premium Plan", price: 9.99, features: ["Everything in Standard", "Personalized AI fitness coaching", "Custom workout plans based on goals", "Access to premium workout videos", "Weekly progress report and insights", "24/7 priority customer support"] },
+//     ],
+//     monthly: [
+//         { title: "Standard Plan", price: 14.99, features: ["Core AI-driven fitness tracking", "Basic workout routines", "Daily calorie tracking", "Limited progress analytics", "Community access"] },
+//         { title: "Premium Plan", price: 29.99, features: ["Everything in Standard", "Personalized AI fitness coaching", "Custom workout plans based on goals", "Access to premium workout videos", "Weekly progress report and insights", "24/7 priority customer support"] },
+//     ],
+//     annual: [
+//         { title: "Standard Plan", price: 99.99, features: ["Core AI-driven fitness tracking", "Basic workout routines", "Daily calorie tracking", "Limited progress analytics", "Community access"] },
+//         { title: "Premium Plan", price: 199.99, features: ["Everything in Standard", "Personalized AI fitness coaching", "Custom workout plans based on goals", "Access to premium workout videos", "Weekly progress report and insights", "24/7 priority customer support"] },
+//     ],
+// };
+
 const pricingOptions = {
-    weekly: [
-        { title: "Standard Plan", price: 4.99, features: ["Core AI-driven fitness tracking", "Basic workout routines", "Daily calorie tracking", "Limited progress analytics", "Community access"] },
-        { title: "Premium Plan", price: 9.99, features: ["Everything in Standard", "Personalized AI fitness coaching", "Custom workout plans based on goals", "Access to premium workout videos", "Weekly progress report and insights", "24/7 priority customer support"] },
-    ],
-    monthly: [
-        { title: "Standard Plan", price: 14.99, features: ["Core AI-driven fitness tracking", "Basic workout routines", "Daily calorie tracking", "Limited progress analytics", "Community access"] },
-        { title: "Premium Plan", price: 29.99, features: ["Everything in Standard", "Personalized AI fitness coaching", "Custom workout plans based on goals", "Access to premium workout videos", "Weekly progress report and insights", "24/7 priority customer support"] },
-    ],
-    annual: [
-        { title: "Standard Plan", price: 99.99, features: ["Core AI-driven fitness tracking", "Basic workout routines", "Daily calorie tracking", "Limited progress analytics", "Community access"] },
-        { title: "Premium Plan", price: 199.99, features: ["Everything in Standard", "Personalized AI fitness coaching", "Custom workout plans based on goals", "Access to premium workout videos", "Weekly progress report and insights", "24/7 priority customer support"] },
-    ],
+  weekly: [
+    {
+      title: "Standard Plan",
+      price: 5.99,
+      features: [
+        "Beginner-Friendly Workout",
+        "Referral Dashboard",
+        "PD Screen"
+      ]
+    },
+    {
+      title: "Premium Plan",
+      price: 9.99,
+      features: [
+        "Beginner-Friendly Workout",
+        "Referral Dashboard",
+        "PD Screen",
+        "Basic Nutrition Guidance",
+        "Social Fitness Challenges",
+        "Mental Wellness"
+      ]
+    }
+  ],
+  monthly: [
+    {
+      title: "Standard Plan",
+      price: 14.99,
+      features: [
+        "Beginner-Friendly Workout",
+        "Referral Dashboard",
+        "PD Screen",
+        "Basic Nutrition Guidance",
+        "Social Fitness Challenges",
+        "Mental Wellness"
+      ]
+    },
+    {
+      title: "Premium Plan",
+      price: 24.99,
+      features: [
+        "Beginner-Friendly Workout",
+        "Referral Dashboard",
+        "PD Screen",
+        "Basic Nutrition Guidance",
+        "Social Fitness Challenges",
+        "Mental Wellness",
+        "Analytics"
+      ]
+    }
+  ],
+  annual: [
+    {
+      title: "Standard Plan",
+      price: 99.99,
+      features: [
+        "Beginner-Friendly Workout",
+        "Referral Dashboard",
+        "PD Screen",
+        "Basic Nutrition Guidance",
+        "Social Fitness Challenges",
+        "Mental Wellness",
+        "Analytics"
+      ]
+    },
+    {
+      title: "Premium Plan",
+      price: 150.99,
+      features: [
+        "Beginner-Friendly Workout",
+        "Referral Dashboard",
+        "PD Screen",
+        "Basic Nutrition Guidance",
+        "Social Fitness Challenges",
+        "Mental Wellness",
+        "Real-Time Form Correction",
+        "Analytics"
+      ]
+    }
+  ]
 };
 
 export default function PricingPlans() {
@@ -34,7 +116,7 @@ export default function PricingPlans() {
                 {["weekly", "monthly", "annual"].map((plan) => (
                     <button
                         key={plan}
-                        className={`px-6 py-2 border text-center text-[16px] md:text-[18px] font-extrabold rounded-md ${
+                        className={`px-6 py-2 border text-center text-[16px] md:text-[18px] font-extrabold rounded-md cursor-pointer hover:opacity-80 transition-all ${
                             selectedPlan === plan ? "bg-[#87944D] text-white" : "bg-white text-[#87944D] border-[#87944D]"
                         }`}
                         onClick={() => setSelectedPlan(plan)}
