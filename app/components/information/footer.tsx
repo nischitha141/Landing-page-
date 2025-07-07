@@ -23,7 +23,7 @@ export default function HeroSection() {
         <div className="flex flex-col md:flex-row items-center justify-between mb-6 space-y-6 md:space-y-0">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Image src="/logo2.svg" alt="FormPerfectAI" width={84} height={34} />
+            <Image src="/logo.svg" alt="FormPerfectAI" width={84} height={34} />
             <span className="text-[30.57px] lg:text-[30.57px] md:text-[20px] font-bold leading-[130%] tracking-[0.15px]">
               FormPerfect AI
             </span>

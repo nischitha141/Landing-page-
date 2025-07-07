@@ -1,3 +1,4 @@
+"use cilent";
 import Image from "next/image";
 
 function HomeSection() {
@@ -15,7 +16,11 @@ function HomeSection() {
           </p>
 
           {/* App Store Buttons */}
-          <div className="flex justify-center md:justify-start space-x-4 mt-6">
+          <div className="flex justify-center md:justify-start space-x-4 mt-6 cursor-pointer"
+            onClick={() =>
+              window.open("https://apps.apple.com/us/app/formperfect-ai/id6742069073", "_blank")
+            }
+          >
             <Image src="/appstore.svg" alt="App Store" width={150} height={50} />
             {/* <Image src="/playstore.svg" alt="Google Play" width={150} height={50} /> */}
           </div>
@@ -23,11 +28,11 @@ function HomeSection() {
 
         {/* Right Side: Mobile UI Preview */}
         <div className="flex-1 flex justify-center mt-10 md:mt-0">
-          <Image 
-            src="/mobile-ui-png.png" 
-            alt="App Preview" 
-            width={400} 
-            height={400} 
+          <Image
+            src="/mobile-ui-png.png"
+            alt="App Preview"
+            width={400}
+            height={400}
             className="max-w-[300px] md:max-w-[400px] lg:max-w-[500px] w-full"
           />
         </div>

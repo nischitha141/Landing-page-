@@ -20,8 +20,10 @@ export default function HeroSection() {
           Smash your goals with AI-driven workouts & nutrition. Join FormPerfectAI today.
         </p>
 
-        <div className="flex justify-center mt-6">
-          <button className="flex items-center px-7 py-2 bg-white rounded-full shadow-md transition hover:shadow-lg">
+        <div className="flex justify-center mt-6 ">
+          <button className="flex items-center px-7 py-2 bg-white rounded-full shadow-md transition hover:shadow-lg cursor-pointer"
+          onClick={() => window.open("https://apps.apple.com/us/app/formperfect-ai/id6742069073", "_blank")}
+          >
             <Image
               src="/apple.svg"
               alt="Apple Logo"
